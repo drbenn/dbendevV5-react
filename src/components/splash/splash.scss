@@ -1,0 +1,270 @@
+.splash-container {
+  // border: 1px solid grey;
+  margin-top: 10rem;
+  max-width: 1240px;
+  overflow: hidden;
+  // margin-top: var(--navbar-height);
+  transition: all 0.1s ease-in;
+}
+
+.splash-container img {
+  width: 100%;
+  object-fit: contain;
+  position: relative;
+  top: 0;
+}
+
+.splash-text-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  // border: 1px solid red;
+  // width: fit-content;
+  position: relative;
+  z-index: 1;
+  cursor: default;
+}
+
+.line-1-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.splash-text-line-1 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  top: 10rem;
+  left: 5rem;
+  // text-shadow: 2px 2px 1px rgba(30, 30, 30, 0.5);
+  // -webkit-text-stroke: 1px var(--color-2);
+  text-shadow: 1px 1px 3px var(--color-2);
+  transition: all 0.1s ease-in;
+
+
+}
+
+.title-text-accent {
+  font-size: 6rem;
+  font-weight: 600;
+  // color: var(--color-accent);
+  // background-image: linear-gradient(165deg, #30C5D2, #471069);
+  background-image: linear-gradient(165deg, #0b8793, #550051);
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  position: absolute;
+  top: 8.1rem;
+  left: 22.5rem;
+  // text-shadow: 2px 2px 1px rgba(30, 30, 30, 0.5);
+  // text-shadow: 1px 1px 1px black;
+    // -webkit-text-stroke: 1px var(--color-2);
+  transition: all 0.1s ease-in;
+  // background-color: green;
+}
+
+.title-text-accent:hover {
+  filter: hue-rotate(-40deg);
+  transition: all 0.1s ease-in;
+}
+
+
+.splash-text-line-2 {
+  position: absolute;
+  top: 15rem;
+  left: 5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  // -webkit-text-stroke: 1px var(--color-2);
+  color: white;
+  // text-shadow: 2px 2px 1px rgba(30, 30, 30, 0.5);
+  text-shadow: 1px 1px 3px var(--color-2);
+  transition: all 0.1s ease-in;
+}
+
+.anim-1 {
+  animation: anim-1 5s ease-in;
+}
+
+@keyframes anim-1 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.anim-2 {
+  animation: anim-2 5s ease-in;
+}
+
+@keyframes anim-2 {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// .anim-3 {
+//   animation: anim-3 1.4s ease-in;
+// }
+// @keyframes anim-3 {
+//   0% {
+//     opacity: 0;
+// }
+//   80%{
+//     opacity: 0;
+//     transform: translateY(0.5rem);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translate(0rem, 0rem);
+//     transform: translateY(0rem);
+//   }
+// }
+
+.anim-3 {
+  animation: anim-3 5s ease-in;
+}
+
+@keyframes anim-3 {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.anim-4 {
+  animation: anim-4 5s ease-in;
+}
+
+@keyframes anim-4 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(1rem);
+  }
+  58% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+
+.anim-5 {
+  animation: anim-5 5s ease-in;
+}
+
+@keyframes anim-5 {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+    transform: translateY(1rem);
+    filter: blur(1px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0rem);
+    filter: blur(0px);
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .splash-container {
+    margin-top: 7rem;
+    transition: all 0.1s ease-in;
+  }
+
+  .splash-text-line-1 {
+    // font-size: 2.5rem;
+    // font-weight: 600;
+    top: 6rem;
+    left: 5rem;
+    transition: all 0.1s ease-in;
+  }
+
+  .title-text-accent {
+    // font-size: 3.5rem;
+    top: 4.3rem;
+    left: 22.5rem;
+  }
+
+  .splash-text-line-2 {
+    // font-size: 1.55rem;
+    // font-weight: 600;
+    top: 11rem;
+    left: 5rem;
+    transition: all 0.1s ease-in;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .splash-container {
+    margin-top: 5rem;
+    transition: all 0.1s ease-in;
+  }
+
+  
+.splash-container img {
+  opacity: 1;
+}
+
+  .splash-text-line-1 {
+    font-size: 3.4rem;
+    font-weight: 600;
+    top: 3.5rem;
+    left: 2.3rem;
+    transition: all 0.1s ease-in;
+    // color: var(--color-3);
+  }
+
+  .title-text-accent {
+    font-size: 4.7rem;
+    top: 2.5rem;
+    left: 17.3rem;
+  }
+
+  .splash-text-line-2 {
+    font-size: 2.1rem;
+    // color: var(--color-3);
+    font-weight: 600;
+    top: 7.5rem;
+    left: 2.3rem;
+    transition: all 0.1s ease-in;
+  }
+}
