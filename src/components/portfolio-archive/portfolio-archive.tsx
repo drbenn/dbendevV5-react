@@ -14,11 +14,12 @@ const PortfolioArchive = () => {
 return (
   <div className='archive-container' id='archive'>
     <span className="archive-title" onClick={updateArchiveView}>Past Projects</span>
-  {viewArchive &&
-    <div className='archive-content-container'>Archive CONTENT</div>
+    <div className={viewArchive ? 'archive-display' : 'archive-hidden'}>Archive CONTENT</div>
+  {/* {viewArchive &&
+
   
   
-  }
+  } */}
 
 
   </div>
