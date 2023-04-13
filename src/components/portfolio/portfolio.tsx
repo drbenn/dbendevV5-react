@@ -6,6 +6,7 @@ import mtlt from '../../assets/img/portfolio/mtlt.png';
 
 import link from '../../assets/img/portfolio/link-buttons/link-2.png';
 import github from '../../assets/img/portfolio/link-buttons/github.png';
+import PortfolioArchive from '../portfolio-archive/portfolio-archive';
 
 
 const Portfolio = () => {
@@ -148,7 +149,7 @@ const Portfolio = () => {
 
           </div>
         </div>
-      
+        <PortfolioArchive />     
       </div>
 
     </div>

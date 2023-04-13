@@ -56,6 +56,7 @@
   // background-image: linear-gradient(165deg, #30C5D2, #471069);
   background-image: linear-gradient(165deg, #0b8793, #550051);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   font-weight: 800;
   position: absolute;
@@ -88,7 +89,7 @@
 }
 
 .anim-1 {
-  animation: anim-1 5s ease-in;
+  animation: anim-1 8s ease-in;
 }
 
 @keyframes anim-1 {
@@ -107,7 +108,7 @@
 }
 
 .anim-2 {
-  animation: anim-2 5s ease-in;
+  animation: anim-2 8s ease-in;
 }
 
 @keyframes anim-2 {
@@ -144,7 +145,7 @@
 // }
 
 .anim-3 {
-  animation: anim-3 5s ease-in;
+  animation: anim-3 8s ease-in;
 }
 
 @keyframes anim-3 {
@@ -163,7 +164,7 @@
 }
 
 .anim-4 {
-  animation: anim-4 5s ease-in;
+  animation: anim-4 8s ease-in;
 }
 
 @keyframes anim-4 {
@@ -185,19 +186,19 @@
 }
 
 .anim-5 {
-  animation: anim-5 5s ease-in;
+  animation: anim-5 8s ease-in;
 }
 
 @keyframes anim-5 {
   0% {
     opacity: 0;
   }
-  85% {
+  70% {
     opacity: 0;
     transform: translateY(1rem);
     filter: blur(1px);
   }
-  90% {
+  80% {
     opacity: 1;
     transform: translateY(0rem);
     filter: blur(0px);

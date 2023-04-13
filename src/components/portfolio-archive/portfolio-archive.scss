@@ -1,0 +1,25 @@
+.archive-container {
+  width: 100%;
+  // border: 1px solid red;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.2s ease-in;
+  margin-top: 5rem;
+}
+
+.archive-title:hover {
+  color:#00458b;
+  transition: 200ms;
+  text-decoration: underline;
+}
+
+
+.archive-content-container {
+  background-color: red;
+  height: 10rem;
+  width:20rem;
+  transition: 800ms;
+}
