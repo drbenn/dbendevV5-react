@@ -12,22 +12,24 @@
 
 .archive-title {
 
-  background-color: #eee;
+  // background-color: #eee;
   color: #444;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 95%;
   border: none;
-  text-align: left;
+  text-align: center;
   outline: none;
   font-size: 15px;
+  transition: 200ms;
 }
 
 .archive-title:hover {
-  color:#00458b;
+  // color:#00458b;
   transition: 200ms;
-  text-decoration: underline;
-  transition: width 0.3s ease-in-out;
+  background: linear-gradient(180deg, #DEE2E6 0%, rgba(222, 226, 230, 0.5) 100%);
+  // text-decoration: underline;
+  // transition: width 0.3s ease-in-out;
 }
 
 
@@ -38,18 +40,18 @@
 //   transition: width 0.3s ease-in-out;
 // }
 
-.archive-display {
+.archive-inView {
   background-color: red;
-  height: 20rem;
-  width:20rem;
-  transition: height 0.3s ease-in-out;
+  height: fit-content;
+  width: 95%;
+  transition: height 0.4s ease-in-out;
 }
 
 .archive-hidden {
   background-color: rgb(0, 21, 255);
   height: 0px;
-  width:30rem;
-  transition: height 0.3s ease-in-out;
+  width: 95%;
+  transition: height 0.4s ease-in-out;
   overflow: hidden;
 }
 

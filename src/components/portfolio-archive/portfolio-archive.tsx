@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './portfolio-archive.scss'
+import ArchiveProject from '../archive-project/archive-project';
 
 
 const PortfolioArchive = () => {
@@ -13,15 +14,17 @@ const PortfolioArchive = () => {
 
 return (
   <div className='archive-container' id='archive'>
-    <span className="archive-title" onClick={updateArchiveView}>Past Projects</span>
-    <div className={viewArchive ? 'archive-display' : 'archive-hidden'}>Archive CONTENT</div>
-  {/* {viewArchive &&
+    <span className="archive-title" 
+      onClick={updateArchiveView}>Past Projects &nbsp;
+      { viewArchive && <span>&#x25B2;</span>} 
+      { !viewArchive && <span>&#x25BC;</span>} 
+      </span>
+    <div className={viewArchive ? 'archive-inView' : 'archive-hidden'}>
+      <ArchiveProject />
 
-  
-  
-  } */}
 
 
+    </div>
   </div>
 
 
