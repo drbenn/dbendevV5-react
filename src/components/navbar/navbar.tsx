@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import logo from '../../assets/img/nav/nav-logo.png';
+import orb from '/orb.png';
+import wave from '/wave.png';
+import circle from '/circle.png';
 
 import './navbar.scss'
 
@@ -14,9 +17,12 @@ const Navbar = () => {
     return (
         <div className='header'>
             <nav className='navbar'>
-                <a href='#top' className='logo'>
-                    <img src={logo} alt='logo' />
-                </a>
+                <div className='logo'>
+                    <a href='#top' >
+                        <img src={circle} alt='logo' />
+                    </a>
+                </div>
+
                 <div className='hamburger' onClick={handleClick}>
                     {click ? (<FaTimes size={30} style={{ color: '#212529' }} />)
                         : (<FaBars size={30} style={{ color: '#212529' }} />)}

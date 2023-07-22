@@ -48,19 +48,20 @@
   // margin: 12rem 0rem 3rem 0rem;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 700;
   /* border: 1px solid red; */
   color: var(--color-1);
   transition: all 0.1s ease-in;
-  text-decoration: underline;
+  // text-decoration: underline;
 }
 
-.condensed {
-  font-family: 'Roboto Condensed', sans-serif;
+.about-detail {
   font-size: 1rem;
-  font-weight: 300;
   color: var(--color-1);
   text-align: start;
+  a { 
+    font-size: 1rem;
+  }
 }
 
 .tech-block {
@@ -90,15 +91,14 @@
   width: 100%;
   background: linear-gradient(180deg, #DEE2E6 0%, rgba(222, 226, 230, 0.5) 100%);
   text-align: start;
-  padding: 1rem;
+  // padding: 1rem;
   margin-bottom: 1rem;
   box-shadow: rgba(50, 50, 50, 0.1) 0px 1px 1px, rgba(50, 50, 50, 0.1) 0px 1px 1px;
 }
 
 .tech-stack-title {
-  margin-bottom: 1rem;
+  padding: 1rem 1rem 1.2rem 1rem;
   font-size: 1rem;
-  font-weight: 300;
   color: var(--color-1);
 }
 
@@ -112,24 +112,38 @@
   align-items: flex-start;
 
   .tech-img-container {
-    width: 2rem;
-    height: 2rem;
-    margin-right: 1rem;
-    margin-bottom: 0.5rem;
+    // border: 1px solid blue;
+    // background-color: rgba(0, 255, 0, 0.478);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // width: 32px;
+    // height: 32px;
+    // margin: 0rem 0.8rem 0.8rem 0rem;
+    margin: 0rem 1rem 0.8rem 1rem;
     overflow: visible;
     transition: all 0.15s ease-in;
+  }
+
+  .tech-name {
+    margin-top: 0.4rem;
+    font-size: 0.5rem;
+    text-align: center;
   }
 
   img {
     object-fit: contain;
     object-position: center;
-    width: 100%;
-    transition: all 0.2s ease-in;
+    // width: 100%;
+    width: 2.6rem;
+    height: 2.6rem;
+    transition: all 150ms ease-in;
   }
 
   img:hover {
-    filter: brightness(120%);
-    transition: all 0.2s ease-in;
+    filter: brightness(90%);
+    transition: all 150ms ease-in;
   }
 }
 
@@ -138,7 +152,7 @@
   .about-container {
   // padding accounts for vertical height of wrapper flexbox as parent does not grow and there is overflow
   padding-bottom: 12rem;
-  transition: all 0.2s ease-in;
+  transition: all 150ms ease-in;
   }
 
 }

@@ -1,7 +1,7 @@
 import './portfolio.scss'
 
 import chargingStation from '../../assets/img/portfolio/charging-stations.png';
-import guessWho from '../../assets/img/portfolio/guess-who.png';
+import guessWho from '../../assets/img/portfolio/guess-who-crop.png';
 import mtlt from '../../assets/img/portfolio/mtlt.png';
 
 import link from '../../assets/img/portfolio/link-buttons/link-2.png';
@@ -12,7 +12,7 @@ import PortfolioArchive from '../portfolio-archive/portfolio-archive';
 const Portfolio = () => {
 
   return (
-    <div className='portfolio-container' id='portfolio'>
+    <div className='portfolio-container'>
 
       <div className="section-label">Portfolio</div>
 
@@ -44,7 +44,7 @@ const Portfolio = () => {
                         src={link}
                         alt={"Demo Link"}
                         loading="lazy"                    
-                      ></img>
+                      />
                   </a>
                 </div>
 
@@ -54,7 +54,7 @@ const Portfolio = () => {
                         src={github}
                         alt={"Github Repo"}
                         loading="lazy"                    
-                      ></img>
+                      />
                   </a>
                 </div>
 
@@ -149,7 +149,7 @@ const Portfolio = () => {
 
           </div>
         </div>
-        <PortfolioArchive />     
+        {/* <PortfolioArchive />      */}
       </div>
 
     </div>

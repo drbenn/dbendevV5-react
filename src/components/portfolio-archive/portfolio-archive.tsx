@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import './portfolio-archive.scss'
 import ArchiveProject from '../archive-project/archive-project';
+import projects from '../../assets/data/projectData.json'
 
 
 const PortfolioArchive = () => {
+  console.log(projects);
+  
   const [viewArchive, setViewArchive] = useState(false)
 
   function updateArchiveView() {
@@ -20,7 +23,21 @@ return (
       { !viewArchive && <span>&#x25BC;</span>} 
       </span>
     <div className={viewArchive ? 'archive-inView' : 'archive-hidden'}>
-      <ArchiveProject />
+      {projects.map((project) => {
+        return (
+          <ArchiveProject
+            key={project.index}
+            title={project.title}
+            detail={project.detail}
+            img={project.img}
+            tech={project.tech}
+            gitLink={project.gitLink}
+            demoLink={project.demoLink}
+            date={project.date}
+          />
+        )
+      })}
+      
 
 
 

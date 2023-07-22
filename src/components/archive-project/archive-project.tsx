@@ -1,18 +1,33 @@
 import { useState } from 'react';
 import './archive-project.scss'
 
+type ProjectProps = {
+  title: string, 
+  detail: string, 
+  img: string,
+  tech: string, 
+  gitLink: string, 
+  demoLink: string, 
+  date: string
+}
 
-const ArchiveProject = () => {
+const ArchiveProject = (props: ProjectProps) => {
 
+  const {title, detail, img, tech, gitLink, demoLink, date} = props
 
-
+// add docker, postman, d3, add python
 return (
   <div className='project-container'>
-    <div className='picture-container'></div>
+    <div className='picture-container'>
+      <img
+        alt={title}
+        src={`../../assets/img/portfolio/${img}`}
+      />
+    </div>
     <div className='detail-container'>
-      <div className='project-title'>Title</div>
-      <div className='project-date'>Date</div>
-      <div className='project-content'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, voluptates blanditiis nobis asperiores nam distinctio officia quasi accusantium quam deleniti consequatur, laboriosam enim cum temporibus dolore, ex placeat. Quasi labore cupiditate nemo obcaecati, molestias, et nihil cum accusantium omnis sapiente amet! Praesentium natus ullam sapiente incidunt quo, soluta tenetur quisquam.</div>
+      <div className='project-title'>{title}</div>
+      <div className='project-date'>{date}</div>
+      <div className='project-content'>{detail}</div>
       
     </div>
 
