@@ -8,13 +8,14 @@
   // border: 1px solid red;
   height: fit-content;
   // width: 100%;
-  padding:2rem;
-  width: 80%;
+  // padding:2rem;
+  min-width: 18rem;
+  max-width: 90rem;
 
 }
-// 3, 10,12,14,19, 27, 30
+// 3, 10,12,14,19, 27, 30, 31
 .image-text {
-  background-image: url(/public/bg27.jpg);
+  background-image: url(/public/bg31.jpg);
   background-size: cover;
   text-align: left;
   background-repeat: no-repeat;
@@ -23,10 +24,11 @@
   background-clip: text;
   -webkit-background-clip: text;
   overflow: hidden;
-  font-size: clamp(8rem, calc(2.8rem + 8.0vw), 13.8rem);
+  font-size: clamp(3rem, calc(1.5rem + 8vw), 12.8rem);
   font-weight: 900;
   line-height: 1.4;
   animation: anim-1 1.2s ease-in;
+  filter: brightness(25%);
 }
 
 
