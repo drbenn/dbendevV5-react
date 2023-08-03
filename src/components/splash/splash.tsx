@@ -6,8 +6,8 @@ const Splash = () => {
       <div className='splash-container'>
         <div className='image-text'>
           <div>DAN BENNETT</div>
-          <div>WEB DEVELOPER</div>
-          <div  id='portfolio'>ARLINGTON,VA</div>
+          <div>DEVELOPER</div>
+          {/* <div  id='portfolio'>ARLINGTON,VA</div> */}
         </div>
       </div>
   )

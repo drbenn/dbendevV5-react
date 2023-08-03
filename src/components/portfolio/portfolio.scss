@@ -8,6 +8,7 @@
   align-items: center;
   transition: all 10ms ease-in;
   margin-top: calc(0.5rem + 10vw);
+  margin-bottom: 20vw;
 }
 
 
@@ -20,7 +21,7 @@
   width: 85%;
   // height: 40rem;
   margin-top: 2rem;
-  margin-bottom: 25rem;
+
   cursor: default;
 }
 
@@ -31,6 +32,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+  border: 1px solid rgb(229, 229, 229);
   // background-color: red;
   margin-bottom: 3rem;
   position: relative;
@@ -91,10 +93,48 @@
   transition: all 500ms cubic-bezier(0.5, 0.43, 0.25, 0.95);
 }
 
+.feature-card-container .project-img {
+  transition: all 1500ms cubic-bezier(0.5, 0.43, 0.25, 0.95);
+}
+
+.feature-card-container:hover .project-img {
+  animation: portfolio-1 15s ease-in infinite;
+}
+
+
+
+@keyframes portfolio-1 {
+  0% {
+    color: white;
+  }
+  10% {
+    transform: scale(130%) translate(0rem, 1.5rem);
+  }
+  30% {
+    transform: translate(5rem, 4rem);
+  }
+  50% {
+    transform: translate(-20rem, -40rem);
+    transform: scale(120%);
+  }
+  70% {
+    transform: translate(20rem, 20rem);
+    transform: scale(110%);
+  }
+  80% {
+    transform: translate(-8rem, -10rem);
+  }
+  100% {
+    transform: scale(100%);
+    transform: translate(0rem, 0rem);
+  }
+}
+
 
 
 .feature-icon-links-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   width:100%;
@@ -136,7 +176,7 @@
 
 @media screen and (max-width:1020px) {
   .portfolio-container {
-    padding-bottom: 10rem;
+    // padding-bottom: 10rem;
   }
 }
 
@@ -146,6 +186,6 @@
 
 @media screen and (max-width:680px) {
   .portfolio-container {
-    padding-bottom: 28rem;
+    // padding-bottom: 28rem;
   }
 }

@@ -11,7 +11,7 @@ import material from '../../assets/img/tech/front/ang-material.png';
 import bootstrap from '../../assets/img/tech/front/bootstrap.png';
 import highcharts from '../../assets/img/tech/front/highcharts.png';
 import ngxs from '../../assets/img/tech/front/ngxs.png';
-import chartjs from '../../assets/img/tech/front/chartjs.jpg';
+import chartjs from '../../assets/img/tech/front/chartjs.png';
 import d3js from '../../assets/img/tech/front/d3js.png';
 import redux from '../../assets/img/tech/front/redux.png';
 import leaflet from '../../assets/img/tech/front/leaflet.png';
@@ -44,7 +44,7 @@ const otherTech = [{name: "GitHub", img: github }, {name: "Jira", img: jira }, {
 const About = () => {
 
   return (
-      <div className='about-container' id='about'>
+      <div className='about-container'>
 
         <div className="section-label">About</div>
 
@@ -58,10 +58,10 @@ const About = () => {
                 I am a self-taught web-developer. 
               </p>
               <p>
-                After years working in the accounting field [CPA license soon to be retired], I realized there would be no straightforward bridge into software engineering, so I took my own path.
+                I have been a full-time software engineer since March 2022.
               </p>
               <p>
-                I have been a full-time software engineer since March 2022.
+                After years working in the accounting field [CPA license soon to be retired], I realized there would be no straightforward bridge into software engineering, so I took my own path.
               </p>
               <p>
                 Check out my <a href="https://github.com/drbenn" target="_blank">Github repository</a> to see what I've been working on recently. It could be a javascript framework, C++ or some other random tech. 
@@ -75,75 +75,79 @@ const About = () => {
 
               <div className='about-subtitle'>Tech Used</div>
 
-              <div className='tech-stack-container'>
-                <div className='tech-stack-title'>
-                  client-side
+
+              <div className='tech-flex'>
+                <div className='tech-stack-container'>
+                  <div className='tech-stack-title'>
+                    client-side
+                  </div>
+
+                  <div className='tech-img-row'>
+                    {frontEndTech.map((tech) => {
+                      return (
+                        <div key={Math.random()} className='tech-img-container'>
+                          <img 
+                            src= {tech.img} 
+                            alt='tech'
+                            loading='lazy'
+                            />
+                            <div className='tech-name'>
+                              {tech.name}
+                            </div>
+                            
+                        </div>
+                      )
+                    })}
+                  </div>
                 </div>
 
-                <div className='tech-img-row'>
-                  {frontEndTech.map((tech) => {
-                    return (
-                      <div key={Math.random()} className='tech-img-container'>
-                        <img 
-                          src= {tech.img} 
-                          alt='tech'
-                          loading='lazy'
-                          />
-                          <div className='tech-name'>
-                            {tech.name}
-                          </div>
-                          
-                      </div>
-                    )
-                  })}
+                <div className='tech-stack-container'>
+                  <div className='tech-stack-title'>
+                    server-side
+                  </div>
+
+                  <div className='tech-img-row'>
+                    {backEndTech.map((tech) => {
+                      return (
+                        <div key={Math.random()} className='tech-img-container'>
+                          <img 
+                            src= {tech.img} 
+                            alt='tech'
+                            loading='lazy'
+                            />
+                            <div className='tech-name'>
+                              {tech.name}
+                            </div>
+                        </div>
+                      )
+                    })}
+                  </div>
+                </div>
+
+                <div className='tech-stack-container'>
+                  <div className='tech-stack-title'>
+                    other
+                  </div>
+
+                  <div className='tech-img-row'>
+                    {otherTech.map((tech) => {
+                      return (
+                        <div key={Math.random()} className='tech-img-container'>
+                          <img 
+                            src= {tech.img} 
+                            alt='tech'
+                            loading='lazy'
+                            />
+                            <div className='tech-name'>
+                              {tech.name}
+                            </div>
+                        </div>
+                      )
+                    })}
+                  </div>
                 </div>
               </div>
 
-              <div className='tech-stack-container'>
-                <div className='tech-stack-title'>
-                  server-side
-                </div>
-
-                <div className='tech-img-row'>
-                  {backEndTech.map((tech) => {
-                    return (
-                      <div key={Math.random()} className='tech-img-container'>
-                        <img 
-                          src= {tech.img} 
-                          alt='tech'
-                          loading='lazy'
-                          />
-                          <div className='tech-name'>
-                            {tech.name}
-                          </div>
-                      </div>
-                    )
-                  })}
-                </div>
-              </div>
-
-              <div className='tech-stack-container'>
-                <div className='tech-stack-title'>
-                  other
-                </div>
-
-                <div className='tech-img-row'>
-                  {otherTech.map((tech) => {
-                    return (
-                      <div key={Math.random()} className='tech-img-container'>
-                        <img 
-                          src= {tech.img} 
-                          alt='tech'
-                          loading='lazy'
-                          />
-                          <div className='tech-name'>
-                            {tech.name}
-                          </div>
-                      </div>
-                    )
-                  })}
-                </div>
-              </div>
             </div>
           </div>
         </div>

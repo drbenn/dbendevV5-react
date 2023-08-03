@@ -15,10 +15,10 @@ function App() {
         <div className='splash-app-wrapper'>
           <Splash />
         </div>
-        <div className='section-wrapper'>
+        <div className='section-wrapper' id='portfolio'>
           <Portfolio />
         </div>
-        <div className='section-wrapper'>
+        <div className='section-wrapper' id='about'>
           <About />
         </div>
       </div>

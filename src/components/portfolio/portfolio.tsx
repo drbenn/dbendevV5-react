@@ -1,6 +1,7 @@
 import './portfolio.scss'
 
 import chargingStation from '../../assets/img/portfolio/charging-stations.png';
+import grizzly from '../../assets/img/portfolio/grizzly.png';
 import guessWho from '../../assets/img/portfolio/guess-who-crop.png';
 import mtlt from '../../assets/img/portfolio/mtlt.png';
 
@@ -17,6 +18,70 @@ const Portfolio = () => {
       <div className="section-label">Portfolio</div>
 
       <div className='portfolio-content-container'>
+
+      <div className='feature-card-container'>
+
+          <img  
+              className='project-img' 
+              src= {grizzly} 
+              alt='Grizzly Dividends'
+              loading='lazy'
+            />
+          <div className='feature-hover-detail-container'>
+
+            <div className='feature-title'>
+                Grizzly Dividends
+              </div>
+
+              <div className='feature-detail'>
+                React, Redux, Python, MySql
+              </div>
+
+              <div className='feature-icon-links-row'>
+                
+                <div className='icon-img-container'>
+                  <a href="https://danbennett.dev/grizzly/" target="_blank">
+                      <img 
+                        src={link}
+                        alt={"Demo Link"}
+                        loading="lazy"                    
+                      />
+                  </a>
+                </div>
+
+                <div className='icon-img-container'>
+                  <a href="https://github.com/drbenn/grizzly-dividends" target="_blank">
+                      <img 
+                        src={github}
+                        alt={"Github Repo"}
+                        loading="lazy"                    
+                      />
+                  </a>
+                </div>
+
+                <div className='icon-img-container'>
+                  <a href="https://github.com/drbenn/dividend-servers" target="_blank">
+                      <img 
+                        src={github}
+                        alt={"Github Repo"}
+                        loading="lazy"                    
+                      />
+                  </a>
+                </div>
+
+                <div className='icon-img-container'>
+                  <a href="https://github.com/drbenn/grizzly-node-api" target="_blank">
+                      <img 
+                        src={github}
+                        alt={"Github Repo"}
+                        loading="lazy"                    
+                      />
+                  </a>
+                </div>
+
+              </div>
+          </div>
+        </div>
 
         <div className='feature-card-container'>
 
