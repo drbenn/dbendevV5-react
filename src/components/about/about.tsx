@@ -61,7 +61,7 @@ const About = () => {
                 I have been a full-time software engineer since March 2022.
               </p>
               <p>
-                After years working in the accounting field [CPA license soon to be retired], I realized there would be no straightforward bridge into software engineering, so I took my own path.
+                After years working in the accounting field, I realized there would be no straightforward bridge into software engineering, so I took my own path.
               </p>
               <p>
                 Check out my <a href="https://github.com/drbenn" target="_blank">Github repository</a> to see what I've been working on recently. It could be a javascript framework, C++ or some other random tech. 
